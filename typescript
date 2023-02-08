@@ -1,0 +1,221 @@
+Script started on 2023-02-05 22:49:50-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="117" LINES="26"]
+]0;vscheff@HP-Mint: ~/Desktop/cs4310/assignment2/quicksort[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4310/assignment2/quicksort[00m$ make
+gcc -std=gnu99 -Werror -Wall -g -pthread    a2.c   -o a2
+]0;vscheff@HP-Mint: ~/Desktop/cs4310/assignment2/quicksort[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4310/assignment2/quicksort[00m$ ./a2 42 10 10
+Beginning sample run with array of length 16.
+
+
+Legacy Quicksort with random array: [66, 40, 81, 41, 12, 58, 21, 40, 35, 43, 74, 43, 17, 4, 96, 62, ]
+Pivot at index [12] with value 66
+Subarray: [17, 40, 62, 41, 12, 58, 21, 40, 35, 43, 4, 43, 66, 74, 96, 81, ]
+Pivot at index [2] with value 17
+Subarray: [12, 4, 17, 41, 62, 58, 21, 40, 35, 43, 40, 43, ]
+Pivot at index [1] with value 12
+Subarray: [4, 12, ]
+Pivot at index [7] with value 41
+Subarray: [40, 40, 35, 21, 41, 58, 43, 62, 43, ]
+Pivot at index [5] with value 40
+Subarray: [35, 21, 40, 40, ]
+Pivot at index [4] with value 35
+Subarray: [21, 35, ]
+Pivot at index [10] with value 58
+Subarray: [43, 43, 58, 62, ]
+Pivot at index [9] with value 43
+Subarray: [43, 43, ]
+Pivot at index [13] with value 74
+Subarray: [74, 96, 81, ]
+Pivot at index [15] with value 96
+Subarray: [81, 96, ]
+
+Legacy Quicksort with sorted array: [4, 12, 17, 21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [0] with value 4
+Subarray: [4, 12, 17, 21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [1] with value 12
+Subarray: [12, 17, 21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [2] with value 17
+Subarray: [17, 21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [3] with value 21
+Subarray: [21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [4] with value 35
+Subarray: [35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [6] with value 40
+Subarray: [40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [7] with value 41
+Subarray: [41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [9] with value 43
+Subarray: [43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [10] with value 58
+Subarray: [58, 62, 66, 74, 81, 96, ]
+Pivot at index [11] with value 62
+Subarray: [62, 66, 74, 81, 96, ]
+Pivot at index [12] with value 66
+Subarray: [66, 74, 81, 96, ]
+Pivot at index [13] with value 74
+Subarray: [74, 81, 96, ]
+Pivot at index [14] with value 81
+Subarray: [81, 96, ]
+
+
+Median Quicksort with random array: [66, 40, 81, 41, 12, 58, 21, 40, 35, 43, 74, 43, 17, 4, 96, 62, ]
+Pivot at index [11] with value 62
+Subarray: [43, 40, 4, 41, 12, 58, 21, 40, 35, 43, 17, 62, 74, 81, 96, 66, ]
+Pivot at index [9] with value 43
+Subarray: [43, 40, 4, 41, 12, 17, 21, 40, 35, 43, 58, ]
+Pivot at index [4] with value 35
+Subarray: [12, 21, 4, 17, 35, 41, 40, 40, 43, ]
+Pivot at index [1] with value 12
+Subarray: [4, 12, 21, 17, ]
+Pivot at index [3] with value 21
+Subarray: [17, 21, ]
+Pivot at index [7] with value 41
+Subarray: [40, 40, 41, 43, ]
+Pivot at index [6] with value 40
+Subarray: [40, 40, ]
+Pivot at index [13] with value 74
+Subarray: [66, 74, 96, 81, ]
+Pivot at index [15] with value 96
+Subarray: [81, 96, ]
+
+Median Quicksort with sorted array: [4, 12, 17, 21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [7] with value 41
+Subarray: [4, 12, 17, 21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [3] with value 21
+Subarray: [4, 12, 17, 21, 35, 40, 40, ]
+Pivot at index [0] with value 4
+Subarray: [4, 12, 17, ]
+Pivot at index [1] with value 12
+Subarray: [12, 17, ]
+Pivot at index [4] with value 35
+Subarray: [35, 40, 40, ]
+Pivot at index [6] with value 40
+Subarray: [40, 40, ]
+Pivot at index [11] with value 62
+Subarray: [43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [9] with value 43
+Subarray: [43, 43, 58, ]
+Pivot at index [12] with value 66
+Subarray: [66, 74, 81, 96, ]
+Pivot at index [13] with value 74
+Subarray: [74, 81, 96, ]
+Pivot at index [14] with value 81
+Subarray: [81, 96, ]
+
+
+Random Quicksort with random array: [66, 40, 81, 41, 12, 58, 21, 40, 35, 43, 74, 43, 17, 4, 96, 62, ]
+Pivot at index [1] with value 12
+Subarray: [4, 12, 81, 41, 66, 58, 21, 40, 35, 43, 74, 43, 17, 40, 96, 62, ]
+Pivot at index [4] with value 35
+Subarray: [21, 17, 35, 58, 66, 40, 81, 43, 74, 43, 41, 40, 96, 62, ]
+Pivot at index [3] with value 21
+Subarray: [17, 21, ]
+Pivot at index [11] with value 62
+Subarray: [43, 58, 40, 40, 43, 41, 62, 74, 81, 96, 66, ]
+Pivot at index [9] with value 43
+Subarray: [43, 41, 40, 40, 43, 58, ]
+Pivot at index [8] with value 43
+Subarray: [40, 41, 40, 43, ]
+Pivot at index [6] with value 40
+Subarray: [40, 40, 41, ]
+Pivot at index [13] with value 74
+Subarray: [66, 74, 96, 81, ]
+Pivot at index [15] with value 96
+Subarray: [81, 96, ]
+
+Random Quicksort with sorted array: [4, 12, 17, 21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [11] with value 62
+Subarray: [4, 12, 17, 21, 35, 40, 40, 41, 43, 43, 58, 62, 66, 74, 81, 96, ]
+Pivot at index [0] with value 4
+Subarray: [4, 12, 17, 21, 35, 40, 40, 41, 43, 43, 58, ]
+Pivot at index [3] with value 21
+Subarray: [12, 17, 21, 35, 40, 40, 41, 43, 43, 58, ]
+Pivot at index [1] with value 12
+Subarray: [12, 17, ]
+Pivot at index [9] with value 43
+Subarray: [43, 40, 40, 41, 35, 43, 58, ]
+Pivot at index [8] with value 43
+Subarray: [35, 40, 40, 41, 43, ]
+Pivot at index [4] with value 35
+Subarray: [35, 40, 40, 41, ]
+Pivot at index [6] with value 40
+Subarray: [40, 40, 41, ]
+Pivot at index [12] with value 66
+Subarray: [66, 74, 81, 96, ]
+Pivot at index [13] with value 74
+Subarray: [74, 81, 96, ]
+Pivot at index [14] with value 81
+Subarray: [81, 96, ]
+
+Legacy rand data time with 1 len array = 120
+Legacy wrst case time with 1 len array = 83
+Median rand data time with 1 len array = 83
+Median wrst case time with 1 len array = 90
+Random rand data time with 1 len array = 87
+Random wrst case time with 1 len array = 79
+
+Legacy rand data time with 2 len array = 207
+Legacy wrst case time with 2 len array = 162
+Median rand data time with 2 len array = 169
+Median wrst case time with 2 len array = 162
+Random rand data time with 2 len array = 154
+Random wrst case time with 2 len array = 169
+
+Legacy rand data time with 4 len array = 443
+Legacy wrst case time with 4 len array = 302
+Median rand data time with 4 len array = 452
+Median wrst case time with 4 len array = 315
+Random rand data time with 4 len array = 400
+Random wrst case time with 4 len array = 287
+
+Legacy rand data time with 8 len array = 859
+Legacy wrst case time with 8 len array = 687
+Median rand data time with 8 len array = 878
+Median wrst case time with 8 len array = 731
+Random rand data time with 8 len array = 937
+Random wrst case time with 8 len array = 813
+
+Legacy rand data time with 16 len array = 1955
+Legacy wrst case time with 16 len array = 1449
+Median rand data time with 16 len array = 2058
+Median wrst case time with 16 len array = 1533
+Random rand data time with 16 len array = 4658
+Random wrst case time with 16 len array = 1771
+
+Legacy rand data time with 32 len array = 4435
+Legacy wrst case time with 32 len array = 4036
+Median rand data time with 32 len array = 4535
+Median wrst case time with 32 len array = 3286
+Random rand data time with 32 len array = 4616
+Random wrst case time with 32 len array = 3841
+
+Legacy rand data time with 64 len array = 10422
+Legacy wrst case time with 64 len array = 12121
+Median rand data time with 64 len array = 10558
+Median wrst case time with 64 len array = 6926
+Random rand data time with 64 len array = 12376
+Random wrst case time with 64 len array = 8300
+
+Legacy rand data time with 128 len array = 23914
+Legacy wrst case time with 128 len array = 42436
+Median rand data time with 128 len array = 31958
+Median wrst case time with 128 len array = 19283
+Random rand data time with 128 len array = 26329
+Random wrst case time with 128 len array = 17319
+
+Legacy rand data time with 256 len array = 50208
+Legacy wrst case time with 256 len array = 134280
+Median rand data time with 256 len array = 51887
+Median wrst case time with 256 len array = 26644
+Random rand data time with 256 len array = 52795
+Random wrst case time with 256 len array = 32445
+
+Legacy rand data time with 512 len array = 50703
+Legacy wrst case time with 512 len array = 252679
+Median rand data time with 512 len array = 55395
+Median wrst case time with 512 len array = 28559
+Random rand data time with 512 len array = 50136
+Random wrst case time with 512 len array = 30182
+
+]0;vscheff@HP-Mint: ~/Desktop/cs4310/assignment2/quicksort[01;32mvscheff@HP-Mint[00m:[01;34m~/Desktop/cs4310/assignment2/quicksort[00m$ exit
+exit
+
+Script done on 2023-02-05 22:50:07-05:00 [COMMAND_EXIT_CODE="0"]

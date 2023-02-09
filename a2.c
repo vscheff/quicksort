@@ -30,7 +30,7 @@ typedef struct {
 	char *name;
 	uint64_t rand_data_time;
 	uint64_t wrst_case_time;
-	void (*func)(uint64_t *, int64_t, int64_t);
+	void (*func)(uint64_t*, int64_t, int64_t);
 } FUNC_TIME_T;
 
 void verbose_sample(FUNC_TIME_T *);
@@ -58,9 +58,9 @@ int main(int argc, char **argv) {
 	srand(atoi(argv[1]));
 
 	FUNC_TIME_T funcs[NUM_FUNCS] = {
-		{"Legacy", 0, 0, &legacy_quicksort},
-       		{"Median", 0, 0, &median_quicksort},
-		{"Random", 0, 0, &random_quicksort}
+		{.name = "Legacy", .func = &legacy_quicksort},
+       		{.name = "Median", .func = &median_quicksort},
+		{.name = "Random", .func = &random_quicksort}
 	};
 
 	verbose_sample(funcs);
@@ -182,7 +182,7 @@ void verbose_sample(FUNC_TIME_T *funcs) {
 // Swaps the location of two given integers
 // param a - pointer to first integer to swap
 // param b - pointer to second integer to swap
-extern inline void interchange(uint64_t *a, uint64_t *b) {
+static inline void interchange(uint64_t *a, uint64_t *b) {
 	uint64_t t = *a;
 	*a = *b;
 	*b = t;
@@ -200,7 +200,7 @@ int64_t partition(uint64_t *a, int64_t m, int64_t p) {
 	// Loop until bottom index crosses top index
 	while (i < j) {
 		// Find index of element greater than pivot element
-		do { i++; } while (a[i] < v && i < p);
+		do { i++; } while (i < p && a[i] < v);
 		
 		// Find index of element less than pivot element
 		do { j--; } while (a[j] > v);
